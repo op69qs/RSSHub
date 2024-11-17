@@ -274,6 +274,10 @@ export type Config = {
     readwise: {
         accessToken?: string;
     };
+    sankakucomplex: {
+        chanCookie?: string;
+        idolCookie?: string;
+    };
     saraba1st: {
         cookie?: string;
     };
@@ -691,6 +695,10 @@ const calculateValue = () => {
         },
         readwise: {
             accessToken: envs.READWISE_ACCESS_TOKEN,
+        },
+        sankakucomplex: {
+            chanCookie: envs.SANKAKUCOMPLEX_CHAN_COOKIE,
+            idolCookie: envs.SANKAKUCOMPLEX_IDOL_COOKIE,
         },
         saraba1st: {
             cookie: envs.SARABA1ST_COOKIE,
